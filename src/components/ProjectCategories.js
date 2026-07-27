@@ -2,7 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faPython } from "@fortawesome/free-brands-svg-icons";
-import { faDna, faMicroscope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartLine,
+  faDna,
+  faMicroscope,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
@@ -31,6 +36,34 @@ const projects = [
   },
 ];
 
+const openSourceTools = [
+  {
+    name: "PRS-CS-Auto",
+    description:
+      "A reproducible Snakemake pipeline for calculating polygenic risk scores with PRS-CS Auto, including genotype preparation, HapMap3 filtering, APOE-region removal, and PLINK scoring.",
+    link: "https://github.com/AndrewsLabUCSF/PRS-CS-Auto",
+    tech: ["Snakemake", "Python", "R", "PLINK"],
+    icon: faChartLine,
+  },
+  {
+    name: "SGE Wynton Executor",
+    description:
+      "A Snakemake executor plugin that submits and manages workflow jobs on UCSF's Wynton high-performance computing cluster through Sun Grid Engine.",
+    link:
+      "https://github.com/AndrewsLabUCSF/snakemake-executor-plugin-sge-wynton",
+    tech: ["Python", "Snakemake", "SGE", "HPC"],
+    icon: faServer,
+  },
+  {
+    name: "MR",
+    description:
+      "Open-source workflows and analysis code for Mendelian randomization research in the Andrews Lab at UCSF.",
+    link: "https://github.com/AndrewsLabUCSF/MR",
+    tech: ["R", "Genetics", "Causal Inference"],
+    icon: faDna,
+  },
+];
+
 const cardVariants = {
   initial: { opacity: 0, y: 24 },
   enter: (index) => ({
@@ -39,6 +72,51 @@ const cardVariants = {
     transition: { duration: 0.45, delay: index * 0.1 },
   }),
 };
+
+function ProjectGrid({ items }) {
+  return (
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      {items.map((project, index) => (
+        <motion.article
+          key={project.name}
+          custom={index}
+          variants={cardVariants}
+          initial="initial"
+          animate="enter"
+          whileHover={{ y: -6 }}
+          className="flex flex-col p-7 border border-gray-200 shadow-sm rounded-2xl bg-white"
+        >
+          <div className="flex items-center justify-center w-14 h-14 text-2xl text-white bg-indigo-800 rounded-xl">
+            <FontAwesomeIcon icon={project.icon} />
+          </div>
+          <h2 className="mt-6 text-2xl font-bold">{project.name}</h2>
+          <p className="flex-grow mt-3 leading-relaxed text-gray-600">
+            {project.description}
+          </p>
+          <div className="flex flex-wrap gap-2 mt-5">
+            {project.tech.map((tech) => (
+              <span
+                key={tech}
+                className="px-3 py-1 text-sm font-medium text-indigo-900 bg-indigo-50 rounded-full"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center mt-6 font-semibold text-indigo-700 hover:text-indigo-900"
+          >
+            <FontAwesomeIcon icon={faGithub} className="mr-2" />
+            View on GitHub
+          </a>
+        </motion.article>
+      ))}
+    </div>
+  );
+}
 
 function ProjectCategories() {
   return (
@@ -57,46 +135,21 @@ function ProjectCategories() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {projects.map((project, index) => (
-            <motion.article
-              key={project.name}
-              custom={index}
-              variants={cardVariants}
-              initial="initial"
-              animate="enter"
-              whileHover={{ y: -6 }}
-              className="flex flex-col p-7 border border-gray-200 shadow-sm rounded-2xl bg-white"
-            >
-              <div className="flex items-center justify-center w-14 h-14 text-2xl text-white bg-indigo-800 rounded-xl">
-                <FontAwesomeIcon icon={project.icon} />
-              </div>
-              <h2 className="mt-6 text-2xl font-bold">{project.name}</h2>
-              <p className="flex-grow mt-3 leading-relaxed text-gray-600">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2 mt-5">
-                {project.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 text-sm font-medium text-indigo-900 bg-indigo-50 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center mt-6 font-semibold text-indigo-700 hover:text-indigo-900"
-              >
-                <FontAwesomeIcon icon={faGithub} className="mr-2" />
-                View on GitHub
-              </a>
-            </motion.article>
-          ))}
+        <ProjectGrid items={projects} />
+
+        <div className="mt-20 mb-10 text-center">
+          <p className="font-semibold tracking-widest text-indigo-700 uppercase">
+            Scientific software
+          </p>
+          <h2 className="mt-2 text-3xl font-bold md:text-4xl">
+            Open-Source Tools
+          </h2>
+          <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-600">
+            Reusable pipelines and infrastructure for genetic analysis and
+            high-performance research computing.
+          </p>
         </div>
+        <ProjectGrid items={openSourceTools} />
       </div>
     </section>
   );
