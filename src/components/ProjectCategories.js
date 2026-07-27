@@ -39,6 +39,15 @@ const projects = [
 
 const openSourceTools = [
   {
+    name: "OpenSignal PH",
+    description:
+      "An open-source public-health safety surveillance platform for reproducible adverse-event signal detection using public FDA data, observable data-quality checks, statistical and machine-learning detectors, historical backtesting, and an explainable API.",
+    link: "https://github.com/codewithrakshya/opensignal-ph",
+    tech: ["Python", "FastAPI", "Public Health", "Machine Learning"],
+    icon: faChartLine,
+    context: "Independent open-source project · Early scaffold",
+  },
+  {
     name: "Clinical Data Warehouse",
     description:
       "A portfolio-scale clinical data warehouse using synthetic Synthea records, PostgreSQL, and Python to demonstrate reproducible ETL, dimensional modeling, data-quality testing, and audit logging without exposing patient information.",
