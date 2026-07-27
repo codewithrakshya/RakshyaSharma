@@ -12,5 +12,26 @@
     "date": "July 2026",
     "category": "Data Analysis",
     "excerpt": "Lessons for aligning variables, identifiers, and metadata across heterogeneous clinical and research datasets."
+  },
+  {
+    "id": "understanding-polygenic-risk-scores",
+    "title": "Understanding Polygenic Risk Scores",
+    "date": "July 2026",
+    "category": "Statistical Genetics",
+    "excerpt": "A practical introduction to how genetic variants are combined into risk scores—and why ancestry, validation, and interpretation matter."
+  },
+  {
+    "id": "snakemake-on-hpc",
+    "title": "Running Snakemake Workflows on HPC",
+    "date": "July 2026",
+    "category": "Research Computing",
+    "excerpt": "Design patterns for scaling reproducible scientific workflows across a shared high-performance computing cluster."
+  },
+  {
+    "id": "mendelian-randomization-basics",
+    "title": "Mendelian Randomization: From Association to Causal Evidence",
+    "date": "July 2026",
+    "category": "Genetic Epidemiology",
+    "excerpt": "The core assumptions, analytical steps, and sensitivity checks behind Mendelian randomization studies."
   }
 ]

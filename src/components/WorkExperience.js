@@ -2,6 +2,8 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import UCSF from "../Images/ucsf.svg";
 import UCSC from "../Images/ucsc.png";
+import Broad from "../Images/broad.png";
+import LBNL from "../Images/lbnl.svg";
 
 const experiences = [
   {
@@ -20,14 +22,14 @@ const experiences = [
   },
   {
     company: "Broad Institute of MIT and Harvard",
-    mark: "BROAD",
+    logo: Broad,
     position: "Computational Genomics Intern",
     startDate: "May 2022",
     endDate: "August 2022",
   },
   {
     company: "Lawrence Berkeley National Laboratory",
-    mark: "LBNL",
+    logo: LBNL,
     position: "Data Science Research Intern",
     startDate: "June 2021",
     endDate: "August 2021",

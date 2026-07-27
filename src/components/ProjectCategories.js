@@ -124,32 +124,32 @@ function ProjectCategories() {
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 text-center">
           <p className="font-semibold tracking-widest text-indigo-700 uppercase">
-            Selected work
-          </p>
-          <h1 className="mt-2 text-4xl font-bold md:text-5xl">
-            Research & Open-Source Projects
-          </h1>
-          <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-600">
-            Reproducible computational work across genomics, biomedical data,
-            and scientific software.
-          </p>
-        </div>
-
-        <ProjectGrid items={projects} />
-
-        <div className="mt-20 mb-10 text-center">
-          <p className="font-semibold tracking-widest text-indigo-700 uppercase">
             Scientific software
           </p>
-          <h2 className="mt-2 text-3xl font-bold md:text-4xl">
+          <h1 className="mt-2 text-4xl font-bold md:text-5xl">
             Open-Source Tools
-          </h2>
+          </h1>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-600">
             Reusable pipelines and infrastructure for genetic analysis and
             high-performance research computing.
           </p>
         </div>
+
         <ProjectGrid items={openSourceTools} />
+
+        <div className="mt-20 mb-10 text-center">
+          <p className="font-semibold tracking-widest text-indigo-700 uppercase">
+            Selected work
+          </p>
+          <h2 className="mt-2 text-3xl font-bold md:text-4xl">
+            Research & Open-Source Projects
+          </h2>
+          <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-600">
+            Reproducible computational work across genomics, biomedical data,
+            and scientific software.
+          </p>
+        </div>
+        <ProjectGrid items={projects} />
       </div>
     </section>
   );
