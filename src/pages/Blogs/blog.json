@@ -1,5 +1,12 @@
 [
   {
+    "id": "genomic-data-quality-control",
+    "title": "Quality Control for Genomic Data: From Raw Variants to Reliable Analysis",
+    "date": "July 27, 2026",
+    "category": "Genomic Data Analysis",
+    "excerpt": "A practical framework for identifying sample, variant, and batch-level problems before they influence downstream biomedical analyses."
+  },
+  {
     "id": "reproducible-bioinformatics-workflows",
     "title": "Building Reproducible Bioinformatics Workflows",
     "date": "July 2026",
@@ -33,12 +40,5 @@
     "date": "July 2026",
     "category": "Genetic Epidemiology",
     "excerpt": "The core assumptions, analytical steps, and sensitivity checks behind Mendelian randomization studies."
-  },
-  {
-    "id": "genomic-data-quality-control",
-    "title": "Quality Control for Genomic Data: From Raw Variants to Reliable Analysis",
-    "date": "July 27, 2026",
-    "category": "Genomic Data Analysis",
-    "excerpt": "A practical framework for identifying sample, variant, and batch-level problems before they influence downstream biomedical analyses."
   }
 ]
