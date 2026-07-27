@@ -75,36 +75,40 @@ const About = () => {
             >
               <p className="mb-4">
                 I’m a data analyst and bioinformatician based in San Francisco.
-                I work with genomic, clinical, public-health, and research data
-                to build reproducible analyses and communicate interpretable
-                findings.
+                My work brings together genomic, clinical, public-health, and
+                research data to answer complex biomedical questions. I develop
+                analyses from the initial data strategy, harmonization, and
+                quality control through statistical modeling, validation,
+                visualization, and scientific reporting.
               </p>
               <p className="mb-4">
-                At the University of California, San Francisco, I analyze
-                genetic, clinical, phenotype, and biomarker datasets to study
-                modifiable risk factors and health outcomes in Alzheimer’s
-                disease and aging populations. My work includes data
-                harmonization, statistical modeling, polygenic risk-score
-                analysis, workflow automation, and scientific reporting.
+                At the University of California, San Francisco, I develop and
+                execute analyses that integrate genetic, clinical, phenotype,
+                and biomarker datasets to investigate modifiable risk factors
+                and health outcomes in Alzheimer’s disease and aging
+                populations. I build reusable analytical workflows, establish
+                data-quality and validation practices, conduct statistical and
+                polygenic risk-score analyses, and translate findings for
+                interdisciplinary collaborators and scientific audiences.
               </p>
               <p className="mb-4">
-                As a UCSF PROPEL Post-Baccalaureate Scholar, I also participate
-                in structured research mentorship, scientific communication,
-                and professional development while preparing for advanced
-                training in biomedical data science and statistical genetics.
+                My work has spanned UCSF, the UCSC Genomics Institute, the Broad
+                Institute, and Lawrence Berkeley National Laboratory. These
+                projects have included computational genomics, biomedical data
+                analysis, scientific software, and image analysis, often
+                requiring methods to be adapted across datasets, research
+                settings, and computing environments. I collaborate with
+                biological, clinical, and technical experts to move from raw
+                data to well-supported results.
               </p>
               <p className="mb-4">
-                I earned a B.S. in Computer Science with a minor in
-                Bioinformatics from UC Santa Cruz. Across UCSF, the UCSC
-                Genomics Institute, the Broad Institute, and Lawrence Berkeley
-                National Laboratory, I’ve collaborated with interdisciplinary
-                teams on biomedical and computational research.
-              </p>
-              <p className="mb-4">
-                My undergraduate training included coursework in artificial
-                intelligence and machine learning, complemented by hands-on
-                projects using predictive modeling, computer vision, and image
-                analysis for scientific applications.
+                I hold a B.S. in Computer Science with a minor in Bioinformatics
+                from UC Santa Cruz, with a technical foundation spanning
+                artificial intelligence, machine learning, predictive
+                modeling, computer vision, and high-performance computing. I am
+                also a UCSF PROPEL Post-Baccalaureate Scholar, where advanced
+                research mentorship and scientific communication complement my
+                work in biomedical data science and statistical genetics.
               </p>
               <div className="p-5 mt-3 border border-indigo-100 bg-indigo-50 rounded-2xl">
                 <h3 className="mb-3 text-xl font-bold text-indigo-950">
