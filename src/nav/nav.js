@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedinIn,
+  faOrcid,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -48,6 +49,7 @@ const Navigation = () => {
             href="https://github.com/codewithrakshya"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Rakshya on GitHub"
           >
             <FontAwesomeIcon
               icon={faGithub}
@@ -58,10 +60,22 @@ const Navigation = () => {
             href="https://www.linkedin.com/in/rakshyausharma"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Rakshya on LinkedIn"
           >
             <FontAwesomeIcon
               icon={faLinkedinIn}
               className="text-xl hover:text-blue-700"
+            />
+          </a>
+          <a
+            href="https://orcid.org/0000-0002-7026-6598"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Rakshya on ORCID"
+          >
+            <FontAwesomeIcon
+              icon={faOrcid}
+              className="text-xl hover:text-[#A6CE39]"
             />
           </a>
         </div>
