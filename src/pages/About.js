@@ -106,11 +106,21 @@ const About = () => {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Alzheimer’s disease & aging",
+                    "Computational biology",
+                    "Population health data science",
+                    "Epidemiologic data analysis",
                     "Statistical genetics",
-                    "Polygenic risk scores",
+                    "Prevention science",
+                    "Aging & neurodegenerative disease",
+                    "Health disparities",
                     "Biomedical data harmonization",
+                    "Clinical, EHR & cohort data",
                     "Reproducible workflows",
+                    "Multi-omics & high-dimensional data",
+                    "Translational genomics",
+                    "Precision & public health",
+                    "Implementation research",
+                    "Global health research",
                     "High-performance computing",
                   ].map((focus) => (
                     <span

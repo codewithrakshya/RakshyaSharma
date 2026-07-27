@@ -26,12 +26,12 @@ const Navigation = () => {
     >
       <div className="flex justify-center p-4 ">
         <div className="flex justify-center">
-          <ul className="flex flex-row gap-10">
-            {["home", "blog", "portfolio"].map((link) => (
+          <ul className="flex flex-row gap-4 md:gap-10">
+            {["home", "blog", "portfolio", "publications"].map((link) => (
               <li key={link}>
                 <Link
                   to={link === "home" ? "/" : `/${link}`}
-                  className="pl-6 text-xl font-bold cursor-pointer hover:text-sky-700"
+                  className="text-base font-bold cursor-pointer md:pl-6 md:text-xl hover:text-sky-700"
                 >
                   {link.charAt(0).toUpperCase() + link.slice(1)}
                 </Link>

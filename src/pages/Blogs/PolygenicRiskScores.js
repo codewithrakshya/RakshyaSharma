@@ -25,7 +25,7 @@ const PolygenicRiskScores = () => (
     category="Statistical Genetics"
     title="Understanding Polygenic Risk Scores"
     introduction="Complex traits are influenced by many genetic variants, each usually contributing a small amount. Polygenic risk scores summarize those distributed effects into one measure, but producing a reliable score requires careful data preparation, modeling, and validation."
-    interviewTakeaways={[
+    keyTakeaways={[
       "I connect statistical methodology to careful allele alignment, quality control, and validation.",
       "I can explain why linkage disequilibrium and population differences affect PRS performance.",
       "I treat responsible interpretation as part of the analytical workflow.",

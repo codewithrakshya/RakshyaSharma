@@ -7,6 +7,7 @@ import Blog from "./pages/Blogs/Blog";
 import BlogPost from "./pages/Blogs/BlogPost";
 const Main = lazy(() => import("./pages/main"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
+const Publications = lazy(() => import("./pages/Publications"));
 const About = lazy(() => import("./pages/About"));
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             {/* Dynamic route first */}
             <Route path="/blog" element={<Blog />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/publications" element={<Publications />} />
           </Routes>
           <Footer />
         </Suspense>

@@ -21,7 +21,7 @@ const HarmonizingBiomedicalData = () => {
 
         <aside className="p-6 border border-indigo-200 bg-indigo-50 rounded-2xl">
           <h2 className="text-xl font-bold text-indigo-950">
-            What I emphasize in interviews
+            Applied perspective
           </h2>
           <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
             <li>I have harmonized and validated more than 30 heterogeneous datasets.</li>

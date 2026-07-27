@@ -15,12 +15,12 @@ const Blog = () => {
           Research communication
         </p>
         <h1 className="mt-2 text-4xl font-bold md:text-5xl">
-          Technical Notes & Interview Talking Points
+          Research & Technical Notes
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-gray-600">
-          Clear explanations of the methods, engineering decisions, and
-          analytical principles behind my work in bioinformatics and
-          statistical genetics.
+          Reflections on the methods, engineering decisions, and analytical
+          principles that shape my work in bioinformatics and statistical
+          genetics.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

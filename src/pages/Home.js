@@ -57,12 +57,12 @@ const Home = () => {
       <div className="flex gap-4 mt-4">
         {/* Resume Button */}
         <motion.a
-          href="/RakshyaSharma_resume.pdf"
+          href="/Rakshya_Sharma_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center px-4 py-2 font-bold transition transform border-2 border-black rounded-3xl hover:scale-110"
         >
-          Resume <FontAwesomeIcon icon={faDownload} className="ml-2" />
+          CV <FontAwesomeIcon icon={faDownload} className="ml-2" />
         </motion.a>
 
         {/* Contact Button */}
