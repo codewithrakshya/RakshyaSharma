@@ -1,6 +1,6 @@
-# Rakshya Ujhanthachhen Sharma
+# Rakshya Sharma
 
-Personal portfolio for Rakshya Ujhanthachhen Sharma, a bioinformatician and
+Personal portfolio for Rakshya Sharma, a bioinformatician and
 quantitative research analyst working across computational biology, statistical
 genetics, population health, and reproducible research.
 

@@ -14,15 +14,15 @@ function App() {
   return (
     <div className="App font-poppins">
       <Helmet>
-        <title>Rakshya Ujhanthachhen Sharma | Bioinformatician</title>
+        <title>Rakshya Sharma | Bioinformatician</title>
         <meta
           name="description"
-          content="Portfolio of Rakshya Ujhanthachhen Sharma, a San Francisco-based bioinformatician and quantitative research analyst."
+          content="Portfolio of Rakshya Sharma, a San Francisco-based bioinformatician and quantitative research analyst."
         />
         <link rel="canonical" href="https://rakshyausharma.com" />
         <meta
           property="og:title"
-          content="Rakshya Ujhanthachhen Sharma | Bioinformatician"
+          content="Rakshya Sharma | Bioinformatician"
         />
         <meta
           property="og:description"
@@ -34,7 +34,7 @@ function App() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "Rakshya Ujhanthachhen Sharma",
+            name: "Rakshya Sharma",
             url: "https://rakshyausharma.com",
             jobTitle: "Bioinformatician",
             affiliation: {

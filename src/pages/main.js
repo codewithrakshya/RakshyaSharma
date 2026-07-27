@@ -19,7 +19,7 @@ const Main = () => {
       <Element name="experience" className="element">
         <Experience />
       </Element>
-      <Element name="skills" className="element bg-slate-900 py-16">
+      <Element name="skills" className="element py-16 bg-white">
         <Skills />
       </Element>
       <Element name="letsconnect" className="element">

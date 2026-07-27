@@ -12,7 +12,7 @@ function Footer() {
     <div className="flex justify-center pt-4">
       <footer className="flex flex-col items-center justify-around w-full md:flex-row">
         <h1 className="text-lg font-medium md:p-5">
-          © {new Date().getFullYear()} Rakshya Ujhanthachhen Sharma
+          © {new Date().getFullYear()} Rakshya Sharma
         </h1>
         <div className="flex items-center gap-5 p-5">
           <a href="mailto:rakshyasharma09@gmail.com" aria-label="Email Rakshya">

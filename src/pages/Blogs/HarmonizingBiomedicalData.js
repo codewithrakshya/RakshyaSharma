@@ -10,7 +10,7 @@ const HarmonizingBiomedicalData = () => {
         A Practical Approach to Harmonizing Biomedical Data
       </h1>
       <p className="mt-3 text-gray-500">
-        July 2026 · Rakshya Ujhanthachhen Sharma
+        July 2026 · Rakshya Sharma
       </p>
 
       <div className="mt-10 space-y-7 text-lg leading-relaxed text-gray-700">
