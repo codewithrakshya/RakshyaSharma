@@ -42,11 +42,17 @@ const openSourceTools = [
   {
     name: "OpenSignal PH",
     description:
-      "An open-source public-health safety surveillance platform for reproducible adverse-event signal detection using public FDA data, observable data-quality checks, statistical and machine-learning detectors, historical backtesting, and an explainable API.",
+      "An evidence-first public-health safety surveillance platform with reproducible FDA and CDC data pipelines, separate statistical and temporal machine-learning detectors, leakage-resistant backtesting, cited evidence briefs with safe abstention, and production-oriented API observability.",
     link: "https://github.com/codewithrakshya/opensignal-ph",
-    tech: ["Python", "FastAPI", "Public Health", "Machine Learning"],
+    demoLink: "https://opensignal-ph.sriman.chatgpt.site",
+    tech: ["Python", "FastAPI", "React", "Public Health", "Machine Learning", "CI"],
     icon: faChartLine,
-    context: "Independent open-source project · Early scaffold",
+    context: "Deployed open-source public-health analytics portfolio release",
+    highlights: [
+      "Reproducible end-to-end demonstration pipeline",
+      "Cited evidence briefs, safe abstention, and role-gated audit trails",
+      "47 backend tests · 88.7% coverage · typed, linted, and UI-tested",
+    ],
   },
   {
     name: "Clinical Data Warehouse",
