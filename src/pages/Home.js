@@ -8,7 +8,9 @@ import { faDownload, faFile } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const handlePronounce = () => {
-    const utterance = new SpeechSynthesisUtterance("Rakshya U. Sharma");
+    const utterance = new SpeechSynthesisUtterance(
+      "Rakshya Ujhanthachhen Sharma"
+    );
     window.speechSynthesis.speak(utterance);
   };
 
@@ -21,7 +23,7 @@ const Home = () => {
       <div className="overflow-hidden border-4 border-black rounded-full h-52 w-52 md:w-80 md:h-80 hover:border-blue-950">
         <img
           src={profilePhoto}
-          alt="Rakshya U. Sharma"
+          alt="Rakshya Ujhanthachhen Sharma"
           className="object-cover object-center w-full h-full"
         />
       </div>
@@ -33,7 +35,7 @@ const Home = () => {
         transition={{ duration: 1 }}
         className="text-4xl font-bold md:text-6xl"
       >
-        Hi, I'm Rakshya U. Sharma
+        Hi, I'm Rakshya Ujhanthachhen Sharma
         <button
           onClick={handlePronounce}
           className="inline-flex items-center ml-2"

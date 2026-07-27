@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, Reorder } from "framer-motion";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPython,
@@ -37,12 +37,20 @@ const developerTools = [
 
 const technologies = [
   "Statistical Modeling",
-  "Predictive Modeling",
-  "Dimensionality Reduction",
   "ggplot2",
   "Matplotlib",
   "R Markdown",
   "Jupyter Notebook",
+];
+
+const machineLearning = [
+  "Machine Learning",
+  "Artificial Intelligence",
+  "Predictive Modeling",
+  "Computer Vision",
+  "Image Analysis",
+  "scikit-learn",
+  "Dimensionality Reduction",
 ];
 
 const skillToIcon = {
@@ -132,6 +140,13 @@ function Skills() {
             </h3>
             <hr className="w-11/12 mx-auto mb-4 border-t-2 border-gray-300 md:w-3/4" />
             {renderSkills(technologies)}
+          </div>
+          <div className="md:col-span-2">
+            <h3 className="flex justify-center mb-4 text-2xl font-semibold text-white">
+              Artificial Intelligence & Machine Learning
+            </h3>
+            <hr className="w-11/12 mx-auto mb-4 border-t-2 border-gray-300 md:w-1/2" />
+            {renderSkills(machineLearning)}
           </div>
         </div>
       </div>

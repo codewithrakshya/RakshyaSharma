@@ -100,6 +100,12 @@ const About = () => {
                 National Laboratory, I’ve collaborated with interdisciplinary
                 teams on biomedical and computational research.
               </p>
+              <p className="mb-4">
+                My undergraduate training included coursework in artificial
+                intelligence and machine learning, complemented by hands-on
+                projects using predictive modeling, computer vision, and image
+                analysis for scientific applications.
+              </p>
               <div className="p-5 mt-3 border border-indigo-100 bg-indigo-50 rounded-2xl">
                 <h3 className="mb-3 text-xl font-bold text-indigo-950">
                   Current Focus
@@ -117,6 +123,9 @@ const About = () => {
                     "Clinical, EHR & cohort data",
                     "Reproducible workflows",
                     "Multi-omics & high-dimensional data",
+                    "Artificial intelligence & machine learning",
+                    "Computer vision & image analysis",
+                    "Predictive modeling",
                     "Translational genomics",
                     "Precision & public health",
                     "Implementation research",
