@@ -19,6 +19,17 @@ const HarmonizingBiomedicalData = () => {
           systems, or collection windows across studies.
         </p>
 
+        <aside className="p-6 border border-indigo-200 bg-indigo-50 rounded-2xl">
+          <h2 className="text-xl font-bold text-indigo-950">
+            What I emphasize in interviews
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+            <li>I have harmonized and validated more than 30 heterogeneous datasets.</li>
+            <li>I document variable definitions, transformations, and merge diagnostics.</li>
+            <li>I treat data quality as a scientific question, not only a preprocessing task.</li>
+          </ul>
+        </aside>
+
         <section>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">
             Begin with a data dictionary

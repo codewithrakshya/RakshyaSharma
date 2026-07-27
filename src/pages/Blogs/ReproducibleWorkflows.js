@@ -19,6 +19,17 @@ const ReproducibleWorkflows = () => {
           collection of scripts in the right order.
         </p>
 
+        <aside className="p-6 border border-indigo-200 bg-indigo-50 rounded-2xl">
+          <h2 className="text-xl font-bold text-indigo-950">
+            What I emphasize in interviews
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+            <li>I make analytical dependencies and parameters explicit.</li>
+            <li>I use versioned environments, logging, and validation to make results auditable.</li>
+            <li>I design workflows that can move from local testing to high-performance computing.</li>
+          </ul>
+        </aside>
+
         <section>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">
             Describe the workflow as a dependency graph

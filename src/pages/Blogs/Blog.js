@@ -10,6 +10,19 @@ const Blog = () => {
 
   return (
     <div className="container px-6 py-10 pt-24 mx-auto">
+      <div className="max-w-3xl mx-auto mb-12 text-center">
+        <p className="font-semibold tracking-widest text-indigo-700 uppercase">
+          Research communication
+        </p>
+        <h1 className="mt-2 text-4xl font-bold md:text-5xl">
+          Technical Notes & Interview Talking Points
+        </h1>
+        <p className="mt-4 text-lg leading-relaxed text-gray-600">
+          Clear explanations of the methods, engineering decisions, and
+          analytical principles behind my work in bioinformatics and
+          statistical genetics.
+        </p>
+      </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {blogs.map((blog) => (
           <div

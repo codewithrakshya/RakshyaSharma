@@ -44,6 +44,7 @@ const openSourceTools = [
     link: "https://github.com/AndrewsLabUCSF/PRS-CS-Auto",
     tech: ["Snakemake", "Python", "R", "PLINK"],
     icon: faChartLine,
+    context: "Andrews Lab UCSF open-source repository",
   },
   {
     name: "SGE Wynton Executor",
@@ -53,6 +54,7 @@ const openSourceTools = [
       "https://github.com/AndrewsLabUCSF/snakemake-executor-plugin-sge-wynton",
     tech: ["Python", "Snakemake", "SGE", "HPC"],
     icon: faServer,
+    context: "Andrews Lab UCSF open-source repository",
   },
   {
     name: "MR",
@@ -61,6 +63,7 @@ const openSourceTools = [
     link: "https://github.com/AndrewsLabUCSF/MR",
     tech: ["R", "Genetics", "Causal Inference"],
     icon: faDna,
+    context: "Andrews Lab UCSF open-source repository",
   },
 ];
 
@@ -90,6 +93,11 @@ function ProjectGrid({ items }) {
             <FontAwesomeIcon icon={project.icon} />
           </div>
           <h2 className="mt-6 text-2xl font-bold">{project.name}</h2>
+          {project.context && (
+            <p className="mt-1 text-sm font-semibold text-indigo-700">
+              {project.context}
+            </p>
+          )}
           <p className="flex-grow mt-3 leading-relaxed text-gray-600">
             {project.description}
           </p>

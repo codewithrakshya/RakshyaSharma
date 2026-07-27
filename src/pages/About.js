@@ -88,12 +88,40 @@ const About = () => {
                 analysis, workflow automation, and scientific reporting.
               </p>
               <p className="mb-4">
+                As a UCSF PROPEL Post-Baccalaureate Scholar, I also participate
+                in structured research mentorship, scientific communication,
+                and professional development while preparing for advanced
+                training in biomedical data science and statistical genetics.
+              </p>
+              <p className="mb-4">
                 I earned a B.S. in Computer Science with a minor in
                 Bioinformatics from UC Santa Cruz. Across UCSF, the UCSC
                 Genomics Institute, the Broad Institute, and Lawrence Berkeley
                 National Laboratory, I’ve collaborated with interdisciplinary
                 teams on biomedical and computational research.
               </p>
+              <div className="p-5 mt-3 border border-indigo-100 bg-indigo-50 rounded-2xl">
+                <h3 className="mb-3 text-xl font-bold text-indigo-950">
+                  Current Focus
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Alzheimer’s disease & aging",
+                    "Statistical genetics",
+                    "Polygenic risk scores",
+                    "Biomedical data harmonization",
+                    "Reproducible workflows",
+                    "High-performance computing",
+                  ].map((focus) => (
+                    <span
+                      key={focus}
+                      className="px-3 py-1 text-sm font-semibold text-indigo-900 bg-white rounded-full"
+                    >
+                      {focus}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </motion.h2>
             <motion.div
               variants={{

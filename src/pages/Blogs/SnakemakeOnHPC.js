@@ -25,6 +25,11 @@ const SnakemakeOnHPC = () => (
     category="Research Computing"
     title="Running Snakemake Workflows on HPC"
     introduction="High-performance computing makes it possible to process large biomedical datasets, but a shared cluster adds scheduling, storage, and environment-management concerns. Snakemake provides a useful boundary between the scientific workflow and the system that executes it."
+    interviewTakeaways={[
+      "I design workflows around explicit dependencies, resources, and reproducible environments.",
+      "I understand how cluster schedulers, shared storage, and failure recovery affect scientific pipelines.",
+      "I focus on maintainable infrastructure that collaborators can rerun and audit.",
+    ]}
     sections={sections}
   />
 );

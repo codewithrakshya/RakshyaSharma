@@ -9,9 +9,13 @@ const experiences = [
   {
     company: "University of California, San Francisco",
     logo: UCSF,
-    position: "Bioinformatician",
+    position: "Bioinformatician · UCSF PROPEL Post-Baccalaureate Scholar",
     startDate: "June 2024",
     endDate: "Present",
+    highlights: [
+      "Harmonize and validate 30+ genetic, clinical, phenotype, and biomarker datasets.",
+      "Build reproducible statistical-genetics workflows for Alzheimer's disease and aging research.",
+    ],
   },
   {
     company: "UC Santa Cruz Genomics Institute",
@@ -19,6 +23,9 @@ const experiences = [
     position: "Undergraduate Research Assistant",
     startDate: "April 2022",
     endDate: "June 2024",
+    highlights: [
+      "Developed computational methods to study RNA-splicing patterns in cancer transcriptomic data.",
+    ],
   },
   {
     company: "Broad Institute of MIT and Harvard",
@@ -26,6 +33,9 @@ const experiences = [
     position: "Computational Genomics Intern",
     startDate: "May 2022",
     endDate: "August 2022",
+    highlights: [
+      "Built a pipeline to identify spinal muscular atrophy-related deletions and variants.",
+    ],
   },
   {
     company: "Lawrence Berkeley National Laboratory",
@@ -33,6 +43,9 @@ const experiences = [
     position: "Data Science Research Intern",
     startDate: "June 2021",
     endDate: "August 2021",
+    highlights: [
+      "Applied machine learning and image analysis to automate plant-root segmentation.",
+    ],
   },
 ];
 
@@ -74,7 +87,7 @@ function ExperienceSection() {
             <React.Fragment key={index}>
               <motion.div
                 variants={cardVariants}
-                className={`flex items-center w-full max-w-3xl `}
+                className="flex items-start w-full max-w-3xl py-4"
               >
                 {exp.logo ? (
                   <div className="flex items-center justify-center flex-shrink-0 w-28 h-28 p-3 bg-white border border-gray-200 rounded-2xl">
@@ -100,6 +113,11 @@ function ExperienceSection() {
                   <p className="mt-1 text-lg ">
                     {exp.startDate} - {exp.endDate}
                   </p>
+                  <ul className="mt-3 space-y-1 text-sm leading-relaxed text-gray-600 list-disc list-inside">
+                    {exp.highlights.map((highlight) => (
+                      <li key={highlight}>{highlight}</li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             </React.Fragment>

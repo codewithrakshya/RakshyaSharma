@@ -1,6 +1,12 @@
 import React from "react";
 
-const BlogArticle = ({ category, title, introduction, sections }) => (
+const BlogArticle = ({
+  category,
+  title,
+  introduction,
+  sections,
+  interviewTakeaways = [],
+}) => (
   <article className="max-w-4xl min-h-screen px-6 pt-28 pb-16 mx-auto">
     <p className="font-semibold tracking-widest text-indigo-700 uppercase">
       {category}
@@ -10,6 +16,18 @@ const BlogArticle = ({ category, title, introduction, sections }) => (
 
     <div className="mt-10 space-y-7 text-lg leading-relaxed text-gray-700">
       <p>{introduction}</p>
+      {interviewTakeaways.length > 0 && (
+        <aside className="p-6 border border-indigo-200 bg-indigo-50 rounded-2xl">
+          <h2 className="text-xl font-bold text-indigo-950">
+            What I emphasize in interviews
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+            {interviewTakeaways.map((takeaway) => (
+              <li key={takeaway}>{takeaway}</li>
+            ))}
+          </ul>
+        </aside>
+      )}
       {sections.map((section) => (
         <section key={section.heading}>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">
