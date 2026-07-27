@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faPython } from "@fortawesome/free-brands-svg-icons";
 import {
   faChartLine,
+  faDatabase,
   faDna,
   faMicroscope,
   faServer,
@@ -37,6 +38,15 @@ const projects = [
 ];
 
 const openSourceTools = [
+  {
+    name: "Clinical Data Warehouse",
+    description:
+      "A portfolio-scale clinical data warehouse using synthetic Synthea records, PostgreSQL, and Python to demonstrate reproducible ETL, dimensional modeling, data-quality testing, and audit logging without exposing patient information.",
+    link: "https://github.com/codewithrakshya/clinical-data-warehouse",
+    tech: ["Python", "PostgreSQL", "ETL", "Docker"],
+    icon: faDatabase,
+    context: "Independent open-source project",
+  },
   {
     name: "PRS-CS-Auto",
     description:
@@ -138,8 +148,8 @@ function ProjectCategories() {
             Open-Source Tools
           </h1>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-600">
-            Reusable pipelines and infrastructure for genetic analysis and
-            high-performance research computing.
+            Reusable pipelines and infrastructure for genetic analysis,
+            clinical data engineering, and high-performance research computing.
           </p>
         </div>
 
