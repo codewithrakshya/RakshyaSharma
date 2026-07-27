@@ -1,0 +1,10 @@
+# Ignore directories
+node_modules/
+.cache/
+# Local Netlify folder
+.netlify
+build/
+
+# Ignore files
+package-lock.json
+yarn.lock
