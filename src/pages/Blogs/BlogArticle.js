@@ -3,6 +3,7 @@ import React from "react";
 const BlogArticle = ({
   category,
   title,
+  date = "July 2026",
   introduction,
   sections,
   tips = [],
@@ -15,7 +16,7 @@ const BlogArticle = ({
     </p>
     <h1 className="mt-3 text-4xl font-bold md:text-5xl">{title}</h1>
     <p className="mt-3 text-gray-500">
-      July 2026 · Rakshya Sharma
+      {date} · Rakshya Sharma
     </p>
 
     <div className="mt-10 space-y-7 text-lg leading-relaxed text-gray-700">

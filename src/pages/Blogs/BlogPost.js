@@ -3,6 +3,7 @@ import HarmonizingBiomedicalData from "./HarmonizingBiomedicalData";
 import PolygenicRiskScores from "./PolygenicRiskScores";
 import SnakemakeOnHPC from "./SnakemakeOnHPC";
 import MendelianRandomization from "./MendelianRandomization";
+import GenomicDataQualityControl from "./GenomicDataQualityControl";
 import { useParams } from "react-router-dom";
 import React from "react";
 
@@ -12,6 +13,7 @@ const blogComponents = {
   "understanding-polygenic-risk-scores": PolygenicRiskScores,
   "snakemake-on-hpc": SnakemakeOnHPC,
   "mendelian-randomization-basics": MendelianRandomization,
+  "genomic-data-quality-control": GenomicDataQualityControl,
 };
 
 const BlogPost = () => {
