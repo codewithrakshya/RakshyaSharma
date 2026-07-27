@@ -25,10 +25,17 @@ const MendelianRandomization = () => (
     category="Genetic Epidemiology"
     title="Mendelian Randomization: From Association to Causal Evidence"
     introduction="Observational associations do not automatically establish causality. Mendelian randomization uses genetic instruments to ask whether an exposure may causally influence an outcome, while making assumptions that must be examined carefully."
-    keyTakeaways={[
-      "I can distinguish association from causal evidence and state the assumptions clearly.",
-      "I prioritize harmonization, instrument quality, and sensitivity analysis before interpretation.",
-      "I communicate uncertainty rather than treating a single estimate as definitive.",
+    tips={[
+      "Check instrument strength, allele alignment, and sample overlap before estimating an effect.",
+      "Use multiple sensitivity analyses rather than relying on one estimator.",
+    ]}
+    learningOutcomes={[
+      "Distinguish observational association from evidence that supports a causal interpretation.",
+      "Identify the core instrumental-variable assumptions and common sources of bias.",
+    ]}
+    useCases={[
+      "Prioritizing potentially modifiable exposures for follow-up studies or clinical trials.",
+      "Evaluating causal hypotheses with GWAS summary statistics when randomized trials are impractical.",
     ]}
     sections={sections}
   />

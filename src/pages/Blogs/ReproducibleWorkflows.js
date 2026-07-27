@@ -22,13 +22,24 @@ const ReproducibleWorkflows = () => {
         </p>
 
         <aside className="p-6 border border-indigo-200 bg-indigo-50 rounded-2xl">
-          <h2 className="text-xl font-bold text-indigo-950">
-            Applied perspective
+          <h2 className="text-xl font-bold text-indigo-950">Practical tips</h2>
+          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+            <li>Keep configuration separate from code and make dependencies explicit.</li>
+            <li>Version software environments, parameters, and reference resources.</li>
+          </ul>
+          <h2 className="mt-5 text-xl font-bold text-indigo-950">
+            Learning outcomes
           </h2>
           <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
-            <li>I make analytical dependencies and parameters explicit.</li>
-            <li>I use versioned environments, logging, and validation to make results auditable.</li>
-            <li>I design workflows that can move from local testing to high-performance computing.</li>
+            <li>Understand how dependency graphs make analyses reproducible and efficient.</li>
+            <li>Recognize why logging, validation, and environment capture are part of scientific rigor.</li>
+          </ul>
+          <h2 className="mt-5 text-xl font-bold text-indigo-950">
+            Where this is useful
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+            <li>Bioinformatics pipelines that must run consistently across laptops and clusters.</li>
+            <li>Collaborative analyses that need to be rerun, audited, or extended later.</li>
           </ul>
         </aside>
 

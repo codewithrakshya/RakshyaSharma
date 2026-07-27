@@ -5,7 +5,9 @@ const BlogArticle = ({
   title,
   introduction,
   sections,
-  keyTakeaways = [],
+  tips = [],
+  learningOutcomes = [],
+  useCases = [],
 }) => (
   <article className="max-w-4xl min-h-screen px-6 pt-28 pb-16 mx-auto">
     <p className="font-semibold tracking-widest text-indigo-700 uppercase">
@@ -18,16 +20,46 @@ const BlogArticle = ({
 
     <div className="mt-10 space-y-7 text-lg leading-relaxed text-gray-700">
       <p>{introduction}</p>
-      {keyTakeaways.length > 0 && (
+      {(tips.length > 0 ||
+        learningOutcomes.length > 0 ||
+        useCases.length > 0) && (
         <aside className="p-6 border border-indigo-200 bg-indigo-50 rounded-2xl">
-          <h2 className="text-xl font-bold text-indigo-950">
-            Key considerations
-          </h2>
-          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
-            {keyTakeaways.map((takeaway) => (
-              <li key={takeaway}>{takeaway}</li>
-            ))}
-          </ul>
+          {tips.length > 0 && (
+            <div>
+              <h2 className="text-xl font-bold text-indigo-950">
+                Practical tips
+              </h2>
+              <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+                {tips.map((tip) => (
+                  <li key={tip}>{tip}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {learningOutcomes.length > 0 && (
+            <div className="mt-5">
+              <h2 className="text-xl font-bold text-indigo-950">
+                Learning outcomes
+              </h2>
+              <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+                {learningOutcomes.map((outcome) => (
+                  <li key={outcome}>{outcome}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {useCases.length > 0 && (
+            <div className="mt-5">
+              <h2 className="text-xl font-bold text-indigo-950">
+                Where this is useful
+              </h2>
+              <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+                {useCases.map((useCase) => (
+                  <li key={useCase}>{useCase}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </aside>
       )}
       {sections.map((section) => (

@@ -22,13 +22,24 @@ const HarmonizingBiomedicalData = () => {
         </p>
 
         <aside className="p-6 border border-indigo-200 bg-indigo-50 rounded-2xl">
-          <h2 className="text-xl font-bold text-indigo-950">
-            Applied perspective
+          <h2 className="text-xl font-bold text-indigo-950">Practical tips</h2>
+          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+            <li>Build a data dictionary before combining variables.</li>
+            <li>Preserve raw fields and document every transformation.</li>
+          </ul>
+          <h2 className="mt-5 text-xl font-bold text-indigo-950">
+            Learning outcomes
           </h2>
           <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
-            <li>I have harmonized and validated more than 30 heterogeneous datasets.</li>
-            <li>I document variable definitions, transformations, and merge diagnostics.</li>
-            <li>I treat data quality as a scientific question, not only a preprocessing task.</li>
+            <li>Recognize differences in definitions, units, coding, and collection windows.</li>
+            <li>Use merge diagnostics and distribution checks to identify data-quality problems.</li>
+          </ul>
+          <h2 className="mt-5 text-xl font-bold text-indigo-950">
+            Where this is useful
+          </h2>
+          <ul className="mt-3 space-y-2 list-disc list-inside text-indigo-950">
+            <li>Combining clinical, phenotype, biomarker, genomic, EHR, or cohort datasets.</li>
+            <li>Preparing multi-study data for pooled analyses and reproducible modeling.</li>
           </ul>
         </aside>
 
