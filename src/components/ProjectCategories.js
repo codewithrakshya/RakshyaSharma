@@ -6,6 +6,7 @@ import {
   faChartLine,
   faDatabase,
   faDna,
+  faArrowUpRightFromSquare,
   faMicroscope,
   faServer,
 } from "@fortawesome/free-solid-svg-icons";
@@ -50,11 +51,17 @@ const openSourceTools = [
   {
     name: "Clinical Data Warehouse",
     description:
-      "A portfolio-scale clinical data warehouse using synthetic Synthea records, PostgreSQL, and Python to demonstrate reproducible ETL, dimensional modeling, data-quality testing, and audit logging without exposing patient information.",
+      "A deployed clinical analytics platform that transforms synthetic Synthea records into an audited PostgreSQL star schema with reproducible ETL, explicit data-quality reporting, and an interactive research dashboard.",
     link: "https://github.com/codewithrakshya/clinical-data-warehouse",
-    tech: ["Python", "PostgreSQL", "ETL", "Docker"],
+    demoLink: "https://rakshya-clinical-warehouse.streamlit.app/",
+    tech: ["Python", "PostgreSQL", "Docker", "Streamlit", "Neon", "CI"],
     icon: faDatabase,
-    context: "Independent open-source project",
+    context: "Cloud-hosted open-source data engineering project",
+    highlights: [
+      "84,708 clinical source records processed",
+      "Dimensional model with audited ETL runs",
+      "7 passing quality checks with visible warnings",
+    ],
   },
   {
     name: "PRS-CS-Auto",
@@ -130,15 +137,41 @@ function ProjectGrid({ items }) {
               </span>
             ))}
           </div>
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center mt-6 font-semibold text-indigo-700 hover:text-indigo-900"
-          >
-            <FontAwesomeIcon icon={faGithub} className="mr-2" />
-            View on GitHub
-          </a>
+          {project.highlights && (
+            <ul className="mt-5 space-y-2 text-sm text-gray-600">
+              {project.highlights.map((highlight) => (
+                <li key={highlight} className="flex gap-2">
+                  <span className="font-bold text-indigo-700">✓</span>
+                  <span>{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="flex flex-wrap gap-4 mt-6">
+            {project.demoLink && (
+              <a
+                href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center font-semibold text-indigo-700 hover:text-indigo-900"
+              >
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  className="mr-2"
+                />
+                Live Dashboard
+              </a>
+            )}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center font-semibold text-indigo-700 hover:text-indigo-900"
+            >
+              <FontAwesomeIcon icon={faGithub} className="mr-2" />
+              View Source
+            </a>
+          </div>
         </motion.article>
       ))}
     </div>
