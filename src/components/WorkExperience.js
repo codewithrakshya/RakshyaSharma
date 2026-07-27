@@ -1,17 +1,19 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import UCSF from "../Images/ucsf.svg";
+import UCSC from "../Images/ucsc.png";
 
 const experiences = [
   {
     company: "University of California, San Francisco",
-    mark: "UCSF",
+    logo: UCSF,
     position: "Bioinformatician",
     startDate: "June 2024",
     endDate: "Present",
   },
   {
     company: "UC Santa Cruz Genomics Institute",
-    mark: "UCSC",
+    logo: UCSC,
     position: "Undergraduate Research Assistant",
     startDate: "April 2022",
     endDate: "June 2024",
@@ -72,12 +74,23 @@ function ExperienceSection() {
                 variants={cardVariants}
                 className={`flex items-center w-full max-w-3xl `}
               >
-                <div
-                  aria-hidden="true"
-                  className="flex items-center justify-center flex-shrink-0 w-28 h-28 text-lg font-bold text-white transition-transform duration-300 bg-slate-800 rounded-2xl hover:scale-105"
-                >
-                  {exp.mark}
-                </div>
+                {exp.logo ? (
+                  <div className="flex items-center justify-center flex-shrink-0 w-28 h-28 p-3 bg-white border border-gray-200 rounded-2xl">
+                    <img
+                      src={exp.logo}
+                      draggable="false"
+                      alt={`${exp.company} logo`}
+                      className="object-contain w-full h-full transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    aria-hidden="true"
+                    className="flex items-center justify-center flex-shrink-0 w-28 h-28 text-lg font-bold text-white transition-transform duration-300 bg-slate-800 rounded-2xl hover:scale-105"
+                  >
+                    {exp.mark}
+                  </div>
+                )}
 
                 <div className={`flex-row text-left mx-8`}>
                   <h3 className="text-xl font-bold">{exp.company}</h3>

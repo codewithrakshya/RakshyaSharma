@@ -1,9 +1,10 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import UCSC from "../Images/ucsc.png";
 const university = [
   {
     university: "University of California, Santa Cruz",
-    mark: "UCSC",
+    logo: UCSC,
     Degree: "B.S. Computer Science · Minor in Bioinformatics",
     startDate: "",
     endDate: "June 2024",
@@ -50,11 +51,13 @@ function EducationSection() {
                 variants={cardVariants}
                 className={`flex items-center w-full max-w-3xl `}
               >
-                <div
-                  aria-hidden="true"
-                  className="flex items-center justify-center flex-shrink-0 w-28 h-28 text-lg font-bold text-white transition-transform duration-300 bg-indigo-800 rounded-2xl hover:scale-105"
-                >
-                  {exp.mark}
+                <div className="flex items-center justify-center flex-shrink-0 w-28 h-28 p-2 bg-white border border-gray-200 rounded-2xl">
+                  <img
+                    src={exp.logo}
+                    draggable="false"
+                    alt={`${exp.university} logo`}
+                    className="object-contain w-full h-full transition-transform duration-300 hover:scale-105"
+                  />
                 </div>
 
                 <div className={`flex-grow text-left mx-8`}>

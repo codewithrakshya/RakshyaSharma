@@ -2,6 +2,7 @@ import React from "react";
 import { HiOutlineSpeakerWave } from "react-icons/hi2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import profilePhoto from "../Images/rakshya-sharma.png";
 import { Link as ScrollLink } from "react-scroll";
 import { faDownload, faFile } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,9 +20,9 @@ const Home = () => {
       {/* Profile Image */}
       <div className="overflow-hidden border-4 border-black rounded-full h-52 w-52 md:w-80 md:h-80 hover:border-blue-950">
         <img
-          src="https://github.com/codewithrakshya.png"
+          src={profilePhoto}
           alt="Rakshya U. Sharma"
-          className="object-cover w-full h-full"
+          className="object-cover object-center w-full h-full"
         />
       </div>
 
