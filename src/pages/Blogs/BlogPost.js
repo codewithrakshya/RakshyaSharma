@@ -1,9 +1,11 @@
-import AWSInterview from "./AWS_Interview";
+import ReproducibleWorkflows from "./ReproducibleWorkflows";
+import HarmonizingBiomedicalData from "./HarmonizingBiomedicalData";
 import { useParams } from "react-router-dom";
 import React from "react";
 
 const blogComponents = {
-  "aws-interview": AWSInterview,
+  "reproducible-bioinformatics-workflows": ReproducibleWorkflows,
+  "harmonizing-biomedical-data": HarmonizingBiomedicalData,
 };
 
 const BlogPost = () => {
@@ -11,7 +13,7 @@ const BlogPost = () => {
   const SelectedBlog = blogComponents[id];
 
   if (!SelectedBlog) {
-    return <div>Blog post not found.</div>;
+    return <div className="min-h-screen pt-32 text-center">Blog post not found.</div>;
   }
 
   return <SelectedBlog />;

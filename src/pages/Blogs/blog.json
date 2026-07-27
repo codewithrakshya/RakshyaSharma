@@ -1,17 +1,16 @@
 [
-    {
-      "id": "aws-interview",
-      "title": "AWS Solutions Architect Intern",
-      "date": "Feb 1, 2025",
-      "image": "https://images.glints.com/unsafe/glints-dashboard.oss-ap-southeast-1.aliyuncs.com/company-logo/f8441721c066e21e0fd3375e7ca9eee7.png"
-      },
-      {
-        "id": "Research",
-        "title": "Research Intern",
-        "date": "Fed 1, 2025",
-        "image": "https://www.sjsu.edu/researchfoundation/pics/2024-research-week-banner.jpg"
-
-
-      }
-  ]
-  
+  {
+    "id": "reproducible-bioinformatics-workflows",
+    "title": "Building Reproducible Bioinformatics Workflows",
+    "date": "July 2026",
+    "category": "Scientific Computing",
+    "excerpt": "How workflow engines, containers, and clear configuration make genomic analyses easier to reproduce, scale, and maintain."
+  },
+  {
+    "id": "harmonizing-biomedical-data",
+    "title": "A Practical Approach to Harmonizing Biomedical Data",
+    "date": "July 2026",
+    "category": "Data Analysis",
+    "excerpt": "Lessons for aligning variables, identifiers, and metadata across heterogeneous clinical and research datasets."
+  }
+]

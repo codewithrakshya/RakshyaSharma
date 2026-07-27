@@ -14,20 +14,23 @@ const Blog = () => {
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            className="overflow-hidden transition-transform transform border border-gray-300 rounded-lg shadow-md hover:scale-105"
+            className="overflow-hidden transition-transform transform bg-white border border-gray-200 shadow-md rounded-2xl hover:-translate-y-1"
           >
-            <img
-              src={blog.image}
-              alt={blog.title}
-              className="object-cover w-full h-48"
-            />
-            <div className="p-4">
+            <div className="flex items-end h-40 p-6 bg-gradient-to-br from-indigo-900 via-indigo-700 to-sky-600">
+              <span className="px-3 py-1 text-sm font-semibold text-indigo-900 bg-white rounded-full">
+                {blog.category}
+              </span>
+            </div>
+            <div className="p-6">
               <h2 className="text-2xl font-semibold">{blog.title}</h2>
-              <p className="text-sm text-gray-600">{blog.date}</p>
+              <p className="mt-1 text-sm text-gray-500">{blog.date}</p>
+              <p className="mt-3 leading-relaxed text-gray-600">
+                {blog.excerpt}
+              </p>
 
               <Link
                 to={`/blog/${blog.id}`}
-                className="inline-block mt-3 font-bold text-blue-500 hover:underline"
+                className="inline-block mt-5 font-bold text-indigo-700 hover:underline"
               >
                 Read More →
               </Link>
