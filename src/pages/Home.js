@@ -1,5 +1,5 @@
 import React from "react";
-import { HiOutlineSpeakerWave } from "react-icons/hi2";
+import { HiChevronDown, HiOutlineSpeakerWave } from "react-icons/hi2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import profilePhoto from "../Images/rakshya-sharma.png";
@@ -17,64 +17,80 @@ const Home = () => {
   return (
     <div
       id="MyBioPage"
-      className="relative z-50 flex flex-col items-center w-full min-h-screen space-y-6 overflow-hidden text-center bg-white "
+      className="relative flex items-center justify-center w-full min-h-[calc(100vh-5rem)] px-6 py-16 overflow-hidden text-center bg-gradient-to-b from-white via-white to-indigo-50/60"
     >
-      {/* Profile Image */}
-      <div className="overflow-hidden border-4 border-black rounded-full h-52 w-52 md:w-80 md:h-80 hover:border-blue-950">
-        <img
-          src={profilePhoto}
-          alt="Rakshya Sharma"
-          className="object-cover object-center w-full h-full"
-        />
+      <div className="flex flex-col items-center w-full max-w-6xl gap-6 pb-12 md:gap-7">
+        {/* Profile Image */}
+        <div className="overflow-hidden border-4 border-indigo-950 rounded-full shadow-lg h-52 w-52 md:w-72 md:h-72 lg:w-80 lg:h-80">
+          <img
+            src={profilePhoto}
+            alt="Rakshya Sharma"
+            className="object-cover object-center w-full h-full"
+          />
+        </div>
+
+        {/* Title */}
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1.0 }}
+          transition={{ duration: 1 }}
+          className="max-w-5xl text-4xl font-bold leading-tight md:text-6xl"
+        >
+          Hi, I'm Rakshya Sharma
+          <button
+            onClick={handlePronounce}
+            className="inline-flex items-center ml-2 align-middle transition-colors hover:text-indigo-700"
+            aria-label="Hear how Rakshya Sharma is pronounced"
+            title="Hear pronunciation"
+          >
+            <HiOutlineSpeakerWave className="w-6 h-6" />
+          </button>
+        </motion.h1>
+
+        {/* Subtitle */}
+        <motion.h2
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          className="max-w-4xl text-lg leading-relaxed text-gray-700 md:text-xl"
+        >
+          Data analyst and bioinformatician translating complex biomedical data
+          into reproducible, interpretable insights.
+        </motion.h2>
+
+        {/* Buttons */}
+        <div className="flex flex-wrap justify-center gap-4">
+          {/* Resume Button */}
+          <motion.a
+            href="/Rakshya_Sharma_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center min-w-[116px] px-5 py-2 font-bold text-white transition transform bg-indigo-900 border-2 border-indigo-900 rounded-full hover:scale-105 hover:bg-indigo-800"
+          >
+            CV <FontAwesomeIcon icon={faDownload} className="ml-2" />
+          </motion.a>
+
+          {/* Contact Button */}
+          <ScrollLink to="letsconnect" spy smooth duration={500}>
+            <motion.div className="flex items-center justify-center min-w-[116px] px-5 py-2 font-bold text-indigo-950 transition transform bg-white border-2 border-indigo-900 rounded-full cursor-pointer hover:scale-105 hover:bg-indigo-50">
+              <FontAwesomeIcon icon={faFile} className="mr-2" />
+              Contact
+            </motion.div>
+          </ScrollLink>
+        </div>
       </div>
 
-      {/* Title */}
-      <motion.h1
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1.0 }}
-        transition={{ duration: 1 }}
-        className="text-4xl font-bold md:text-6xl"
+      <ScrollLink
+        to="about"
+        spy
+        smooth
+        duration={500}
+        className="absolute flex flex-col items-center gap-1 text-sm font-semibold tracking-wide text-indigo-950 uppercase transition-colors cursor-pointer bottom-5 hover:text-indigo-700"
+        aria-label="Scroll to About Me"
       >
-        Hi, I'm Rakshya Sharma
-        <button
-          onClick={handlePronounce}
-          className="inline-flex items-center ml-2"
-        >
-          <HiOutlineSpeakerWave className="w-6 h-6" />
-        </button>
-      </motion.h1>
-
-      {/* Subtitle */}
-      <motion.h2
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
-        className="text-lg md:text-xl"
-      >
-        Data analyst and bioinformatician translating complex biomedical data
-        into reproducible, interpretable insights.
-      </motion.h2>
-
-      {/* Buttons */}
-      <div className="flex gap-4 mt-4">
-        {/* Resume Button */}
-        <motion.a
-          href="/Rakshya_Sharma_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center px-4 py-2 font-bold transition transform border-2 border-black rounded-3xl hover:scale-110"
-        >
-          CV <FontAwesomeIcon icon={faDownload} className="ml-2" />
-        </motion.a>
-
-        {/* Contact Button */}
-        <ScrollLink to="letsconnect" spy smooth duration={500}>
-          <motion.div className="flex items-center px-4 py-2 font-bold transition transform border-2 border-black rounded-3xl hover:scale-110">
-            <FontAwesomeIcon icon={faFile} className="mr-2" />
-            Contact
-          </motion.div>
-        </ScrollLink>
-      </div>
+        <span>Explore</span>
+        <HiChevronDown className="w-7 h-7 animate-bounce" />
+      </ScrollLink>
     </div>
   );
 };
