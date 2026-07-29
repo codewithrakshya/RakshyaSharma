@@ -1,5 +1,12 @@
 [
   {
+    "id": "reliable-scalable-genomic-workflows",
+    "title": "Engineering Genomic Workflows for Reliable, Scalable Analysis",
+    "date": "July 28, 2026",
+    "category": "Bioinformatics Engineering",
+    "excerpt": "How explicit contracts, domain-aware validation, observability, and failure recovery turn complex genomic analyses into dependable systems."
+  },
+  {
     "id": "genomic-data-quality-control",
     "title": "Quality Control for Genomic Data: From Raw Variants to Reliable Analysis",
     "date": "July 27, 2026",

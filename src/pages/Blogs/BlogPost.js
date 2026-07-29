@@ -4,10 +4,12 @@ import PolygenicRiskScores from "./PolygenicRiskScores";
 import SnakemakeOnHPC from "./SnakemakeOnHPC";
 import MendelianRandomization from "./MendelianRandomization";
 import GenomicDataQualityControl from "./GenomicDataQualityControl";
+import ReliableGenomicWorkflows from "./ReliableGenomicWorkflows";
 import { useParams } from "react-router-dom";
 import React from "react";
 
 const blogComponents = {
+  "reliable-scalable-genomic-workflows": ReliableGenomicWorkflows,
   "reproducible-bioinformatics-workflows": ReproducibleWorkflows,
   "harmonizing-biomedical-data": HarmonizingBiomedicalData,
   "understanding-polygenic-risk-scores": PolygenicRiskScores,
