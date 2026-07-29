@@ -2,6 +2,8 @@ import React, { useMemo, useState } from "react";
 import { HiArrowTopRightOnSquare, HiSparkles } from "react-icons/hi2";
 import profilePhoto from "../Images/rakshya-sharma.png";
 
+const DEFAULT_AVATAR_URL = "https://rakshyasharma-ai.streamlit.app";
+
 const AIAvatar = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const spaceUrl = useMemo(
@@ -9,7 +11,7 @@ const AIAvatar = () => {
       (
         process.env.REACT_APP_AI_AVATAR_URL ||
         process.env.REACT_APP_GRADIO_SPACE_URL ||
-        ""
+        DEFAULT_AVATAR_URL
       ).replace(/\/$/, ""),
     []
   );
