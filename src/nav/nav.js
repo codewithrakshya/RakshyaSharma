@@ -7,6 +7,7 @@ import {
   faOrcid,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import rakshyaLogo from "../Images/rakshya-ai-logo.png";
 
 const Navigation = () => {
   const [, setIsTop] = useState(true);
@@ -25,9 +26,20 @@ const Navigation = () => {
     <nav
       className={`absolute top-0 left-0 z-30 w-full transition-opacity duration-300  border-b-2 border-gray-200 border-dashed bg-gray-50 `}
     >
-      <div className="flex justify-center p-4 ">
+      <div className="relative flex items-center justify-center p-4">
+        <Link
+          to="/"
+          className="absolute left-3 rounded-full md:left-5 focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-300"
+          aria-label="Rakshya Sharma home"
+        >
+          <img
+            src={rakshyaLogo}
+            alt=""
+            className="w-10 h-10 rounded-full shadow-sm md:w-12 md:h-12"
+          />
+        </Link>
         <div className="flex justify-center">
-          <ul className="flex flex-row gap-4 md:gap-10">
+          <ul className="flex flex-row gap-3 ml-14 md:ml-24 md:gap-10">
             {["home", "blog", "portfolio", "publications"].map((link) => (
               <li key={link}>
                 <Link

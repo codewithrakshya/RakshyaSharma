@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { HiArrowTopRightOnSquare, HiSparkles } from "react-icons/hi2";
-import profilePhoto from "../Images/rakshya-sharma.png";
+import rakshyaLogo from "../Images/rakshya-ai-logo.png";
 
 const DEFAULT_AVATAR_URL = "https://rakshyasharma-ai.streamlit.app";
 
@@ -36,8 +36,8 @@ const AIAvatar = () => {
 
           <div className="flex items-center gap-4 mb-5">
             <img
-              src={profilePhoto}
-              alt=""
+              src={rakshyaLogo}
+              alt="Rakshya AI logo"
               className="object-cover w-20 h-20 border-2 rounded-full shadow-lg border-indigo-200/80"
             />
             <div>
@@ -133,7 +133,11 @@ const AIAvatar = () => {
           ) : (
             <div className="flex flex-col items-center justify-center h-[660px] p-8 text-center bg-gradient-to-b from-indigo-50 to-white">
               <div className="flex items-center justify-center w-16 h-16 mb-5 text-3xl bg-indigo-100 rounded-2xl">
-                🧬
+                <img
+                  src={rakshyaLogo}
+                  alt=""
+                  className="w-16 h-16 rounded-2xl"
+                />
               </div>
               <h3 className="text-2xl font-bold text-indigo-950">
                 Rakshya AI is almost online
