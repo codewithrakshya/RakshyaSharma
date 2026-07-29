@@ -2,6 +2,8 @@ import os
 import time
 
 import streamlit as st
+from PIL import Image
+from pathlib import Path
 from openai import OpenAI
 
 
@@ -268,9 +270,12 @@ MAX_USER_QUESTIONS = 20
 MIN_SECONDS_BETWEEN_QUESTIONS = 2
 MAX_HISTORY_MESSAGES = 12
 
+LOGO_PATH = Path(__file__).parent / "assets" / "rakshya-ai-logo.png"
+RAKSHYA_LOGO = Image.open(LOGO_PATH)
+
 st.set_page_config(
     page_title="Rakshya AI",
-    page_icon="🧬",
+    page_icon=RAKSHYA_LOGO,
     layout="centered",
     initial_sidebar_state="collapsed",
 )
@@ -297,7 +302,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("🧬 Rakshya AI")
+logo_column, title_column = st.columns([1, 7])
+with logo_column:
+    st.image(RAKSHYA_LOGO, width=72)
+with title_column:
+    st.title("Rakshya AI")
 st.caption(
     "Ask about my research, experience, strengths, technical skills, or "
     "common interview questions."
