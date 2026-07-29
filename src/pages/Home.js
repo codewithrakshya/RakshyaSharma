@@ -62,7 +62,7 @@ const Home = () => {
         <div className="flex flex-wrap justify-center gap-4">
           {/* Resume Button */}
           <motion.a
-            href="/Rakshya_Sharma_CV.pdf"
+            href="/Rakshya_Sharma_CV_2026-07-28.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center min-w-[116px] px-5 py-2 font-bold text-white transition transform bg-indigo-900 border-2 border-indigo-900 rounded-full hover:scale-105 hover:bg-indigo-800"
