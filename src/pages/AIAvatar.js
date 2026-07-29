@@ -84,6 +84,17 @@ const AIAvatar = () => {
             may make mistakes and should not be treated as medical or scientific
             advice.
           </p>
+          {spaceUrl && (
+            <a
+              href={spaceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-3 mt-6 text-sm font-bold text-indigo-950 transition bg-white rounded-full hover:bg-indigo-100 focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-300"
+            >
+              Having trouble with the embedded chat? Open it directly
+              <HiArrowTopRightOnSquare aria-hidden="true" />
+            </a>
+          )}
         </div>
 
         <div className="relative min-h-[660px] overflow-hidden bg-white border shadow-2xl rounded-3xl border-white/20">
@@ -106,6 +117,7 @@ const AIAvatar = () => {
                 className="w-full h-[660px] border-0"
                 loading="lazy"
                 allow="clipboard-read; clipboard-write"
+                referrerPolicy="strict-origin-when-cross-origin"
                 onLoad={() => setIsLoaded(true)}
               />
               <a
