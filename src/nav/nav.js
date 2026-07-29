@@ -39,7 +39,7 @@ const Navigation = () => {
           />
         </Link>
         <div className="flex justify-center">
-          <ul className="flex flex-row gap-3 ml-12 md:ml-0 md:gap-10">
+          <ul className="flex flex-row gap-3 ml-14 md:ml-24 md:gap-10">
             {["home", "blog", "portfolio", "publications"].map((link) => (
               <li key={link}>
                 <Link
