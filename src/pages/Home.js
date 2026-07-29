@@ -1,5 +1,9 @@
 import React from "react";
-import { HiChevronDown, HiOutlineSpeakerWave } from "react-icons/hi2";
+import {
+  HiChevronDown,
+  HiOutlineSpeakerWave,
+  HiSparkles,
+} from "react-icons/hi2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import profilePhoto from "../Images/rakshya-sharma.png";
@@ -75,6 +79,14 @@ const Home = () => {
             <motion.div className="flex items-center justify-center min-w-[116px] px-5 py-2 font-bold text-indigo-950 transition transform bg-white border-2 border-indigo-900 rounded-full cursor-pointer hover:scale-105 hover:bg-indigo-50">
               <FontAwesomeIcon icon={faFile} className="mr-2" />
               Contact
+            </motion.div>
+          </ScrollLink>
+
+          {/* AI Avatar Button */}
+          <ScrollLink to="ai-avatar" spy smooth duration={500}>
+            <motion.div className="flex items-center justify-center min-w-[116px] px-5 py-2 font-bold text-indigo-950 transition transform bg-indigo-100 border-2 border-indigo-200 rounded-full cursor-pointer hover:scale-105 hover:bg-indigo-200">
+              <HiSparkles className="w-5 h-5 mr-2" />
+              Ask my AI
             </motion.div>
           </ScrollLink>
         </div>

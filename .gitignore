@@ -4,6 +4,9 @@ node_modules/
 # Local Netlify folder
 .netlify
 build/
+.env.local
+.streamlit/secrets.toml
+ai-avatar/.streamlit/secrets.toml
 
 # Ignore files
 package-lock.json
