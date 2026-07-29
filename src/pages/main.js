@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import Home from "./Home";
+import AIAvatar from "./AIAvatar";
 import About from "./About";
 import Letsconnect from "./Letsconnect";
 import Skills from "./Skills";
@@ -12,6 +13,9 @@ const Main = () => {
     <div className="pt-20">
       <Element name="Home" className="element">
         <Home />
+      </Element>
+      <Element name="ai-avatar" className="element">
+        <AIAvatar />
       </Element>
       <Element name="about" className="element">
         <About />
