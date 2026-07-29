@@ -8,6 +8,17 @@ import {
 const publications = [
   {
     year: "2026",
+    type: "Preprint",
+    title:
+      "Orthogonal Contributions of Genetic, Clinical, and Social Determinants of Health Risk Burdens on Alzheimer’s Disease Pathophysiology",
+    authors:
+      "Meri Okorie, Xiaqing Jiang, Paulina Tolosa-Tort, Rakshya U. Sharma, Alexandra L. Clark, Kristine Yaffe, Jennifer S. Yokoyama, Shea Andrews, and the Health and Aging Brain Study–Health Disparities",
+    journal: "medRxiv",
+    url: "https://doi.org/10.64898/2026.07.07.26357509",
+    doi: "10.64898/2026.07.07.26357509",
+  },
+  {
+    year: "2026",
     type: "Peer-reviewed article",
     title:
       "Evaluating the causal effect of mitochondrial dysfunction on Alzheimer’s and Parkinson’s disease using Polygenic Risk Scores and Mendelian Randomization",
