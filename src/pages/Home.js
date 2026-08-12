@@ -6,7 +6,6 @@ import {
 } from "react-icons/hi2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import profilePhoto from "../Images/rakshya-sharma.png";
 import { scroller } from "react-scroll";
 import { faDownload, faFile } from "@fortawesome/free-solid-svg-icons";
 
@@ -28,42 +27,57 @@ const Home = () => {
   return (
     <div
       id="MyBioPage"
-      className="relative flex items-center justify-center w-full min-h-[calc(100vh-5rem)] px-6 py-16 overflow-hidden text-center bg-gradient-to-b from-white via-white to-indigo-50/60"
+      className="relative flex items-center justify-center w-full min-h-[calc(100vh-5rem)] px-6 py-20 overflow-hidden text-center bg-gradient-to-br from-white via-indigo-50/30 to-teal-50/50"
     >
-      <div className="flex flex-col items-center w-full max-w-6xl gap-6 pb-12 md:gap-7">
-        {/* Profile Image */}
-        <div className="overflow-hidden border-4 border-indigo-950 rounded-full shadow-lg h-52 w-52 md:w-72 md:h-72 lg:w-80 lg:h-80">
-          <img
-            src={profilePhoto}
-            alt="Rakshya Sharma"
-            className="object-cover object-center w-full h-full"
-          />
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+        <div className="absolute w-64 h-64 border rounded-full -left-24 top-24 border-indigo-200/60" />
+        <div className="absolute w-96 h-96 border rounded-full -right-40 bottom-10 border-teal-200/60" />
+        <div className="absolute w-3 h-3 bg-rose-400 rounded-full left-[12%] top-[38%] shadow-[34px_42px_0_#5eead4,72px_-18px_0_#c4b5fd]" />
+        <div className="absolute w-3 h-3 bg-indigo-300 rounded-full right-[15%] top-[30%] shadow-[-42px_48px_0_#67e8f9,38px_72px_0_#fda4af]" />
+      </div>
+
+      <div className="relative z-10 flex flex-col items-center w-full max-w-6xl gap-7 pb-12 md:gap-8">
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1 px-4 py-2 text-xs font-bold tracking-widest text-indigo-900 uppercase bg-white border border-indigo-100 rounded-2xl shadow-sm sm:text-sm sm:rounded-full"
+        >
+          {["Data", "Bioinformatics", "Reproducibility"].map((label) => (
+            <span key={label} className="inline-flex items-center gap-2">
+              <span className="w-2 h-2 bg-teal-500 rounded-full" />
+              {label}
+            </span>
+          ))}
+        </motion.div>
+
+        <div className="max-w-5xl">
+          <p className="mb-3 text-lg font-semibold tracking-wide text-indigo-700 md:text-xl">
+            Hi, I’m
+          </p>
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1.0 }}
+            transition={{ duration: 0.9 }}
+            className="text-5xl font-bold leading-[0.95] tracking-tight text-indigo-950 md:text-7xl lg:text-8xl"
+          >
+            Rakshya Sharma
+            <button
+              onClick={handlePronounce}
+              className="inline-flex items-center ml-3 align-middle transition-colors hover:text-indigo-700"
+              aria-label="Hear how Rakshya Sharma is pronounced"
+              title="Hear pronunciation"
+            >
+              <HiOutlineSpeakerWave className="w-7 h-7 md:w-9 md:h-9" />
+            </button>
+          </motion.h1>
         </div>
 
-        {/* Title */}
-        <motion.h1
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1.0 }}
-          transition={{ duration: 1 }}
-          className="max-w-5xl text-4xl font-bold leading-tight md:text-6xl"
-        >
-          Hi, I'm Rakshya Sharma
-          <button
-            onClick={handlePronounce}
-            className="inline-flex items-center ml-2 align-middle transition-colors hover:text-indigo-700"
-            aria-label="Hear how Rakshya Sharma is pronounced"
-            title="Hear pronunciation"
-          >
-            <HiOutlineSpeakerWave className="w-6 h-6" />
-          </button>
-        </motion.h1>
-
-        {/* Subtitle */}
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="max-w-4xl text-lg leading-relaxed text-gray-700 md:text-xl"
+          className="max-w-3xl text-xl leading-relaxed text-gray-700 md:text-2xl"
         >
           Data analyst and bioinformatician translating complex biomedical data
           into reproducible, interpretable insights.

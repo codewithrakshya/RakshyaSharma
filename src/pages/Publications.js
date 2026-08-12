@@ -8,6 +8,17 @@ import {
 const publications = [
   {
     year: "2026",
+    type: "Peer-reviewed article",
+    title:
+      "Toward personalized medicine in AD/ADRD through genetic-exposome dementia risk assessments",
+    authors:
+      "Paulina Tolosa-Tort, Meri Okorie, Aadrita Chatterjee, Ana I. Boeriu, Rakshya U. Sharma, and Shea J. Andrews",
+    journal: "npj Dementia",
+    url: "https://doi.org/10.1038/s44400-026-00087-7",
+    doi: "10.1038/s44400-026-00087-7",
+  },
+  {
+    year: "2026",
     type: "Preprint",
     title:
       "Orthogonal Contributions of Genetic, Clinical, and Social Determinants of Health Risk Burdens on Alzheimer’s Disease Pathophysiology",
@@ -47,15 +58,6 @@ const publications = [
     journal: "medRxiv",
     url: "https://doi.org/10.1101/2025.07.16.25331683",
     doi: "10.1101/2025.07.16.25331683",
-  },
-  {
-    year: "2025",
-    type: "Article",
-    title:
-      "Toward Personalized Medicine in AD/ADRD Through Genetic-Exposome Dementia Risk Assessments",
-    authors:
-      "Paulina Tolosa-Tort, Meri Okorie, Aadrita Chatterjee, Ana I. Borieu, Rakshya U. Sharma, and Shea J. Andrews",
-    journal: "npj Dementia",
   },
 ];
 
