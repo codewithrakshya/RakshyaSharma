@@ -16,19 +16,27 @@
   }
 }
 
-/* src/index.css */
-body {
-    margin: 0;
-    overscroll-behavior: contain;
-    overflow-x: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantaloupe", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+/* Keep one page-level scroll container. Setting only overflow-x on body causes
+   Chrome to compute overflow-y as auto, which can compete with the html
+   scroller and leave the page unable to respond to wheel or trackpad input. */
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-  html {
-    overflow: auto;
-  }
-  
+body {
+  min-height: 100%;
+  margin: 0;
+  overflow: visible;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantaloupe", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root,
+.App {
+  min-height: 100vh;
+}
