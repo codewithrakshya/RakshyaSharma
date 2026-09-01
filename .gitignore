@@ -9,5 +9,4 @@ build/
 ai-avatar/.streamlit/secrets.toml
 
 # Ignore files
-package-lock.json
 yarn.lock
