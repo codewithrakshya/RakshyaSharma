@@ -11,6 +11,12 @@ import rakshyaLogo from "../Images/rakshya-ai-logo.png";
 
 const Navigation = () => {
   const [, setIsTop] = useState(true);
+  const navigationLinks = [
+    { label: "Home", to: "/" },
+    { label: "Writing", to: "/writing" },
+    { label: "Portfolio", to: "/portfolio" },
+    { label: "Publications", to: "/publications" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,13 +46,13 @@ const Navigation = () => {
         </Link>
         <div className="flex justify-center">
           <ul className="flex flex-row gap-3 ml-14 md:ml-24 md:gap-10">
-            {["home", "blog", "portfolio", "publications"].map((link) => (
-              <li key={link}>
+            {navigationLinks.map((link) => (
+              <li key={link.to}>
                 <Link
-                  to={link === "home" ? "/" : `/${link}`}
+                  to={link.to}
                   className="text-base font-bold cursor-pointer md:pl-6 md:text-xl hover:text-sky-700"
                 >
-                  {link.charAt(0).toUpperCase() + link.slice(1)}
+                  {link.label}
                 </Link>
               </li>
             ))}

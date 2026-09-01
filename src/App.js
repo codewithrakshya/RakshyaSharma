@@ -61,6 +61,7 @@ function App() {
             <Route path="/blog/:id" element={<BlogPost />} />{" "}
             {/* Dynamic route first */}
             <Route path="/blog" element={<Blog />} />
+            <Route path="/writing" element={<Blog />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/publications" element={<Publications />} />
           </Routes>
