@@ -8,6 +8,17 @@ import {
 const publications = [
   {
     year: "2026",
+    type: "First-author preprint",
+    title:
+      "Sex differences in genetic liability to modifiable Alzheimer’s disease risk factors",
+    authors:
+      "Rakshya U. Sharma, Paulina Tolosa-Tort, Meri Okorie, Aadrita Chatterjee, Caroline Jonson, Kristine Yaffe, Michael E. Belloy, Shea J. Andrews, ADGC, and the HABS-HD Study Team",
+    journal: "medRxiv",
+    url: "https://doi.org/10.64898/2026.10.01.26364536",
+    doi: "10.64898/2026.10.01.26364536",
+  },
+  {
+    year: "2026",
     type: "Peer-reviewed article",
     title:
       "Toward personalized medicine in AD/ADRD through genetic-exposome dementia risk assessments",
