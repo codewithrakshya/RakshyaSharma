@@ -40,6 +40,20 @@ const projects = [
 
 const openSourceTools = [
   {
+    name: "GenomicSEM Workflow",
+    description:
+      "A configurable summary-statistics workflow for multivariable LD score regression, genetic factor modeling, model comparison, and optional factor GWAS, with validation and reproducible scientific reporting.",
+    link: "https://github.com/codewithrakshya/genomicsem-workflow",
+    tech: ["Python", "R", "Snakemake", "Bash", "GenomicSEM"],
+    icon: faDna,
+    context: "Open-source statistical genetics workflow",
+    highlights: [
+      "Configuration-driven analysis and input validation",
+      "LDSC, model comparison, pilot testing, and full factor GWAS stages",
+      "Dated HTML reports with figures, methods, interpretation, and references",
+    ],
+  },
+  {
     name: "OpenSignal PH",
     description:
       "An evidence-first public-health safety surveillance platform with reproducible FDA and CDC data pipelines, separate statistical and temporal machine-learning detectors, leakage-resistant backtesting, cited evidence briefs with safe abstention, and production-oriented API observability.",
